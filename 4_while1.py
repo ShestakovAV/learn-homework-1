@@ -14,7 +14,9 @@ def hello_user():
     """
     Замените pass на ваш код
     """
-    pass
+    good = ''
+    while good != "Хорошо":
+        good = input('Как дела? ',).strip().lower().capitalize()
 
     
 if __name__ == "__main__":

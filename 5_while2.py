@@ -30,11 +30,8 @@ def ask_user(answers_dict):
     question = ''
     while question != '0':
         question = input('введите свой вопрос: ',).strip().lower()  # ввод вопроса, обрезание лишних пробеловв если таковые имеются и перевод в нижний ригистр
-        if question in answers_dict.keys():                         # проверка наличия вопроса в словаре
-            print(answers_dict[question])
-        else:                                                        # предложение дополнить словарь, в случае отсутствия вопроса в имеющемся
-            print('такого вопроса у меня еще не было! Даже не знаю что ответить')
-            
+        no_question = 'такого вопроса у меня еще не было! Даже не знаю что ответить'
+        print(answers_dict.get(question, no_question))    
 
 if __name__ == "__main__":
     ask_user(questions_and_answers)

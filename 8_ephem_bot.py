@@ -63,7 +63,7 @@ def main():
     dp.add_handler(CommandHandler("start", greet_user))
    # dp.add_handler(MessageHandler(Filters.text, talk_to_me))
     dp.add_handler(CommandHandler("planet", planet))
-    dp.add_handler(MessageHandler(Filters.text, planet))
+    #dp.add_handler(MessageHandler(Filters.text, planet))
     mybot.start_polling()
     mybot.idle()
 

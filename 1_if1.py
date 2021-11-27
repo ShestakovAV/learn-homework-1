@@ -13,6 +13,17 @@
 * Вывести содержимое переменной на экран
 
 """
+def define_age(age):
+    vozrast = age
+    if vozrast <= 6:
+        conclusion = f'человек такого возраста должен учиться в саду'
+    elif vozrast <= 17:
+        conclusion = f'человек такого возраста должен ходить в школу'
+    elif vozrast <= 22:
+        conclusion = f'человек такого возраста должен учиться в ВУЗе'
+    else:
+        conclusion = f'человек такого возраста должен работать'
+    return(conclusion)
 
 def main():
     """
@@ -20,19 +31,9 @@ def main():
     В ней надо заменить pass на ваш код
     """
     age = int(input('введите Ваш возраст: ', ))
-    def job(age):
-       vozrast = age
-       if vozrast <= 6:
-          vivod = f'человек такого возраста должен учиться в саду'
-       elif vozrast <= 17:
-          vivod = f'человек такого возраста должен ходить в школу'
-       elif vozrast <= 22:
-          vivod = f'человек такого возраста должен учиться в ВУЗе'
-       elif vozrast > 22:
-          vivod = f'человек такого возраста должен работать'
-       return(vivod)
-    vivod = job(age) 
-    print(vivod)
+
+     
+    print(define_age(age))
 
 
 if __name__ == "__main__":

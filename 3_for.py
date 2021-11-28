@@ -69,3 +69,4 @@ def main():
     middle_sales_general(realised_phones)
 if __name__ == "__main__":
     main()
+
